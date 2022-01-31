@@ -57,7 +57,7 @@ class TestHotel(common.SavepointCase):
         cls.room_5 = cls.env.ref("pms.pms_room_5")
         cls.room_6 = cls.env.ref("pms.pms_room_6")
 
-        cls.list0 = cls.env.ref("product.list0")
+        cls.list0 = cls.env.ref("product.list") #product.list0 old value
         cls.list1 = cls.env["product.pricelist"].create(
             {"name": "Test Pricelist", "pricelist_type": ""}
         )
